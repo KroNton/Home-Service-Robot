@@ -48,26 +48,26 @@ int main( int argc, char** argv )
     marker.color.g = 1.0f;
     marker.color.b = 0.0f;
     marker.color.a = 1.0;
-
+    marker.lifetime = ros::Duration(5.0);
     marker_pub.publish(marker);
-    sleep(5.0);
-    marker.action = visualization_msgs::Marker::DELETEALL;
-    sleep(5.0);
-    marker.action = visualization_msgs::Marker::ADD;
+    
+    
+    
+   /* marker.action = visualization_msgs::Marker::ADD;
     // Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
     marker.pose.position.x = 2;
-    marker.pose.position.y = 4;
+    marker.pose.position.y = 6;
     marker.pose.position.z = 0;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
     marker.pose.orientation.z = 0.0;
     marker.pose.orientation.w = 1.0;
+    marker.lifetime = ros::Duration(5.0);
+    marker_pub.publish(marker); */
 
-    marker_pub.publish(marker);
-
-    marker.lifetime = ros::Duration();
+    
         // Publish the marker
-    while (marker_pub.getNumSubscribers() < 1)
+   /* while (marker_pub.getNumSubscribers() < 1)
     {
       if (!ros::ok())
       {
@@ -75,7 +75,8 @@ int main( int argc, char** argv )
       }
       ROS_WARN_ONCE("Please create a subscriber to the marker");
       sleep(1);
-    }
+    }*/
+
     // Cycle between different shapes
     /* switch (shape)
     {
