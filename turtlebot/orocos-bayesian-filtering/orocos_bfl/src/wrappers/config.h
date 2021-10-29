@@ -1,0 +1,10 @@
+#ifndef BFL_WRAPPER_CONFIG_H
+#define BFL_WRAPPER_CONFIG_H
+
+/* #undef __MATRIXWRAPPER_NEWMAT__ */
+#define __MATRIXWRAPPER_BOOST__
+/* #undef __MATRIXWRAPPER_EIGEN__ */
+
+#define __RNGWRAPPER_BOOST__
+
+#endif
