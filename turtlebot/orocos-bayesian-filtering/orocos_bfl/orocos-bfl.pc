@@ -1,9 +1,0 @@
-prefix=/usr/local
-libdir=${prefix}/lib
-includedir=${prefix}/include
-
-Name: orocos-bfl
-Description: Orocos Bayesian Filtering Library
-Version: 0.8.99
-Libs: -L${libdir} -lorocos-bfl   
-Cflags: -I${includedir} -I/usr/include -I/usr/include -I

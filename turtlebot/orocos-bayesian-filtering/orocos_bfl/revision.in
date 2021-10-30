@@ -1,1 +1,0 @@
-svn info @PROJ_SOURCE_DIR@ | grep '^Revision' | sed -e 's/Revision: *//'
